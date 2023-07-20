@@ -1,0 +1,215 @@
+@use "./variables.scss";
+@use "sass:math";
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf") format("true type");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Medium.ttf") format("true type");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf") format("true type");
+    font-weight: 400;
+}
+
+@mixin backgroundImage($url) {
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+}
+
+@function pixelsToVW($targetWidth) {
+    @return math.div($targetWidth * 100vw, 1440px);
+}
+
+body {
+    font-family: Roboto;
+    line-height: 1.5;
+    color: variables.$darkGray;
+    background-color: variables.$black;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (max-width: 415px) {
+        font-size: 30px;
+        line-height: 45px; 
+    }
+}
+
+h2 {
+    @extend h1;
+    font-size: 38px;
+    line-height: 57px;
+
+    @media (max-width: 415px) {
+        font-size: 18px;
+        line-height: 27px; 
+    }
+}
+
+.button {
+    padding: 20px 30px;
+    border:none;
+    border-radius: 5px;
+
+    &--green {
+        background-color: variables.$green;
+        color: #fff;
+    }
+}
+
+.header {
+    @include backgroundImage($url: '../images/banner.png');
+    width: 100%;
+
+    &-navigation {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: pixelsToVW(1200px);
+        top: 25px;
+        transform: translateX(-50%);
+        left: 50%;
+
+        @media (max-width: 415px) {
+            width: calc(100% - 40px);
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        &__logo {
+            position: relative;
+            display: block;
+            font-size: 11px;
+            margin-right: 90px;
+            text-transform: uppercase;
+
+            @media (max-width: 415px) {
+                margin-left: 40px;
+                margin-bottom: 17px;
+            }
+
+            &::before {
+                @include backgroundImage($url: '../images/logo.svg');
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -40px;
+                content: "";
+            }
+        }
+
+        &__link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            font-size: 11px;
+            margin-right: 24px;
+
+            &:last-of-type {
+                margin-right: auto;
+
+                @media (max-width: 415px) {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+
+        &__search {
+            margin: 0;
+            display: block;
+            box-sizing: border-box;
+            border-radius: 50px;
+            background-color: variables.$dark;
+            border: none;
+            text-transform: uppercase;
+            width: pixelsToVW(248px);
+            height: 25px;
+            padding: 5px 10px;
+
+            @media (max-width: 415px) {
+                width: 100%;
+            }
+
+            &::placeholder {
+                font-family: inherit;
+                font-size: 13.3px;
+            }
+        }
+    }
+
+    &-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 200px 0;
+        text-align: center;
+
+        &__heading {
+            margin: 0;
+        }
+
+        &__subheading {
+            margin: 0 0 31px 0;
+        }
+
+        &__paragraph {
+            font-size: variables.$textSize1;
+            margin: 0 0 17px 0;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 570px;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 415px) {
+            margin: 0 20px;
+
+            & > * {
+                flex-grow: 1;
+            }
+        }
+        
+        &__input {
+            min-width: 270px;
+            min-height: 50px;
+            box-sizing: border-box;
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+            border: solid 2px variables.$darkGray;
+            border-radius: 3px;
+            background-color: transparent;
+
+            &::placeholder {
+                font-family: inherit;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+
+        .button {
+            flex-grow: 1;
+        }
+    }
+}
+
