@@ -1,5 +1,4 @@
 @use "./variables.scss";
-@use "sass:math";
 
 @font-face {
     font-family: Roboto;
@@ -17,16 +16,6 @@
     font-family: Roboto;
     src: url("../fonts/Roboto-Regular.ttf") format("true type");
     font-weight: 400;
-}
-
-@mixin backgroundImage($url) {
-    background-image: url($url);
-    background-position: center;
-    background-size: cover;
-}
-
-@function pixelsToVW($targetWidth) {
-    @return math.div($targetWidth * 100vw, 1440px);
 }
 
 body {
@@ -60,34 +49,42 @@ h2 {
 }
 
 .button {
+    display: block;
     padding: 20px 30px;
-    border:none;
+    border: none;
     border-radius: 5px;
 
     &--green {
         background-color: variables.$green;
         color: #fff;
     }
+
+    &--white {
+        border: 1px solid #fff;
+        font-size: variables.$textSize1;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+    }
 }
 
 .header {
-    @include backgroundImage($url: '../images/banner.png');
+    @include variables.backgroundImage($url: '../images/banner.png');
+    @include variables.limitMaximumWidth;
     width: 100%;
 
     &-navigation {
         position: absolute;
         display: flex;
         align-items: center;
-        width: pixelsToVW(1200px);
         top: 25px;
         transform: translateX(-50%);
         left: 50%;
 
         @media (max-width: 415px) {
-            width: calc(100% - 40px);
             align-items: flex-start;
             flex-direction: column;
-            margin: 0;
         }
 
         &__logo {
@@ -103,7 +100,7 @@ h2 {
             }
 
             &::before {
-                @include backgroundImage($url: '../images/logo.svg');
+                @include variables.backgroundImage($url: '../images/logo.svg');
                 position: absolute;
                 width: 24px;
                 height: 24px;
@@ -138,7 +135,7 @@ h2 {
             background-color: variables.$dark;
             border: none;
             text-transform: uppercase;
-            width: pixelsToVW(248px);
+            width: variables.pixelsToVW(248px);
             height: 25px;
             padding: 5px 10px;
 
@@ -183,8 +180,6 @@ h2 {
         padding: 0;
 
         @media (max-width: 415px) {
-            margin: 0 20px;
-
             & > * {
                 flex-grow: 1;
             }

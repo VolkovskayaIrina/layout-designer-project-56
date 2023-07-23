@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $black: #08020d;
 $darkGray: #cacaca;
 $gray: #E0E0E0;
@@ -16,4 +18,26 @@ $textSize2: 24px;
 $textSize1: 16px;
 $textSmall: 12.8px;
 
+@function pixelsToVW($targetWidth) {
+    @return math.div($targetWidth * 100vw, 1440px);
+}
 
+@mixin backgroundImage($url) {
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin limitMaximumWidth {
+    > * {
+        max-width: pixelsToVW(1200px);
+        margin: 0 auto;
+    }
+
+    @media (max-width: 415px) {
+        > * {
+            width: calc(100% - 40px);
+            max-width: initial;
+        }
+    }
+}
