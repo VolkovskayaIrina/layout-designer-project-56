@@ -3,7 +3,7 @@
 
 .pricing {
     @include variables.limitMaximumWidth;
-    padding-top: variables.pixelsToVW(100px);
+    padding-top: 100px;
     
     &__heading {
         text-align: center;
@@ -72,4 +72,82 @@
         margin-top: 40px;
         font-size: variables.$textSize1;
      }
+}
+
+
+.news {
+    @include variables.limitMaximumWidth;
+    padding-top: 100px;
+
+    &__heading {
+        margin: 0 auto 48px auto;
+        text-align: center;
+    }
+
+    &-item {
+        display: flex;
+        gap: 50px;
+
+        @media (max-width: 415px) {
+            flex-direction: column;
+        }
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+
+            @media (max-width: 415px) {
+                flex-direction: column;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+
+        &__image {
+            flex: 1 1 0;
+        }
+
+        &-description {
+            flex: 1 1 0;
+
+            &__heading {
+                font: 400 30px/1.5 Roboto;
+                margin: 0 0 30px 0;
+
+                @media (max-width: 415px) {
+                    font-size: 16px;
+                }
+            }
+
+            &__paragraph {
+                font-size: variables.$textSize1;
+                margin: 0 0 24px 0;
+            }
+
+            &__author {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 48px;
+
+                &-name {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: variables.$orange;
+                }
+            }
+
+            &__date {
+                font-size: 12px;
+                color: variables.$darkGray;
+            }
+
+            .button {
+                padding: 16px 30px;
+                font-size: 12px;
+            }
+        }
+    }
 }
