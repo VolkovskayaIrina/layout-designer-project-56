@@ -19,6 +19,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: Roboto;
     line-height: 1.5;
     color: variables.$darkGray;
@@ -217,3 +219,68 @@ h2 {
     }
 }
 
+.footer {
+    @include variables.limitMaximumWidth;
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+    padding-top: 3rem;
+  padding-bottom: 2rem;
+    
+    &-map {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 72px;
+
+        @media (max-width: 415px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+       
+        &-list {
+            padding: 0;
+            margin: 0;
+            flex: 0 1 variables.pixelsToVW(270px);
+            list-style-type: none;
+            
+            &-item {
+                color: #fff;
+
+                &__heading {
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+
+                &__link {
+                    text-decoration: none;
+                    font-size: variables.$textSize1;
+                    color: variables.$gray;
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+
+    &__line {
+        min-width: 100%;
+        height: 2px;
+        border: none;
+        background-color: variables.$darkGray;
+    }
+
+    &-navigation {
+        display: flex;
+        gap: 16px;
+        margin-top: 40px;
+
+        @media (max-width: 415px) {
+            flex-direction: column;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: variables.$gray;
+            font-size: variables.$textSize1;
+        }
+    }
+}
