@@ -6,7 +6,6 @@
     padding-top: 100px;
     
     &__heading {
-        text-align: center;
         margin-bottom: variables.pixelsToVW(48px);
     }
 
@@ -81,7 +80,6 @@
 
     &__heading {
         margin: 0 auto 48px auto;
-        text-align: center;
     }
 
     &-item {
@@ -148,6 +146,43 @@
                 padding: 16px 30px;
                 font-size: 12px;
             }
+        }
+    }
+}
+
+.app {
+    @include variables.limitMaximumWidth;
+    padding: 100px 0;
+
+    &__heading {
+        margin-bottom: 48px;
+    }
+
+    &-columns {
+        display: flex;
+        gap: variables.pixelsToVW(144px);
+
+        &__wrap {
+            flex: 0 1 variables.pixelsToVW(600px);
+        }
+
+        &__paragraph {
+            font-size: variables.$textSize1;
+            color: variables.$darkGray;
+            margin: 16px 0;
+        }
+
+        &__image {
+            align-self: flex-start;
+
+            @media (max-width: 415px) {
+                align-self: center;
+            }
+        }
+
+        @media (max-width: 415px) {
+            flex-direction: column-reverse;
+            gap: 0;
         }
     }
 }
