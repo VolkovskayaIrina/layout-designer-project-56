@@ -77,12 +77,71 @@ h2 {
         padding: 16px 40px;
         font-size: variables.$textSmall;
     }
+
+    &--red-secondary {
+        position: relative;
+        background-color: variables.$red;
+        width: 200px;
+        font-size: variables.$textSmall;
+        text-transform: uppercase;
+        padding-left: 67px;
+        text-align: left;
+
+        &::before {
+            @include variables.backgroundImage($url: '../images/heart.svg');
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            display: block;
+            width: 20px;
+            height: 18px;
+            content: '';
+        }
+    }
+
+    &--purple {
+        @extend .button--red-secondary;
+        background-color: variables.$purple;
+
+        &::before {
+            @include variables.backgroundImage($url: '../images/play-button.svg');
+            height: 20px;
+        }
+    }
 }
 
 .header {
     @include variables.backgroundImage($url: '../images/banner.png');
     @include variables.limitMaximumWidth;
     width: 100%;
+    
+    &--artist {
+        @include variables.backgroundImage($url: '../images/Morten Harket.png');
+    }
+
+    &--artist &-description {
+        align-items: flex-start;
+
+        &__heading {
+            text-align: left;
+            margin-bottom: 16px;
+        }
+
+        &__paragraph {
+            margin: 0;
+        }
+    }
+
+    &--artist &-form {
+        margin-top: 48px;
+        gap: 1.5rem;
+        align-items: center;
+
+        & > .button {
+            flex-grow: 0;
+        }
+    }
 
     &-navigation {
         position: absolute;
