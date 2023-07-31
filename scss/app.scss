@@ -241,3 +241,48 @@
         }
     }
 }
+
+.discography {
+    @include variables.limitMaximumWidth;
+    padding-top: 100px;
+
+    &__heading {
+        text-align: left;
+        margin: 0 auto 48px auto;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-auto-rows: 320px;
+        gap: 69px variables.pixelsToVW(50px);
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+
+
+        @media (max-width: 415px) {
+            grid-template-columns: repeat(2, 137px);
+            grid-template-rows: 206px;
+            grid-auto-rows: 233px;
+            column-gap: 50px;
+         }
+        
+        &-item {
+            &__image {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+            }
+
+            &__heading {
+               margin: 0;
+               font-size: 18px;
+               line-height: 27px;
+            }
+
+            &__year {
+                font-size: variables.$textSize1;
+            }
+        }
+    }
+}

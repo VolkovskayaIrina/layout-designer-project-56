@@ -122,6 +122,12 @@ h2 {
 
     &--artist &-description {
         align-items: flex-start;
+        padding-bottom: 223px;
+        padding-top: 250px;
+
+        @media (max-width: 415px) {
+            padding-top: 225px;
+        }
 
         &__heading {
             text-align: left;
