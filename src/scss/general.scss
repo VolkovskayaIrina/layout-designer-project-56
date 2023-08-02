@@ -59,6 +59,7 @@ h2 {
     color: #fff;
 
     &--green {
+        text-transform: uppercase;
         background-color: variables.$green;
     }
 
