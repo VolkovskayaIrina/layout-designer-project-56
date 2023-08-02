@@ -554,6 +554,7 @@ h2 {
 @media (max-width: 415px) {
     .news-item-description__heading {
         font-size: 16px;
+        margin-bottom: 16px;
     }
 }
 
