@@ -64,6 +64,7 @@ h2 {
 }
 
 .button--green {
+    text-transform: uppercase;
     background-color: #34c176;
 }
 
@@ -491,10 +492,6 @@ h2 {
     font-size: 16px;
 }
 
-.news {
-    padding-top: 100px;
-}
-
 .news>* {
     max-width: 83.3333333333vw;
     margin: 0 auto;
@@ -504,6 +501,17 @@ h2 {
     .news>* {
         width: calc(100% - 40px);
         max-width: initial;
+    }
+}
+
+.news #page-news {
+    padding-top: 100px;
+}
+
+@media (min-width: 416px) {
+    .news #page-news {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -547,6 +555,7 @@ h2 {
 .news-item-description__heading {
     font: 400 30px/1.5 Roboto;
     margin: 0 0 30px 0;
+    color: #fff;
 }
 
 @media (max-width: 415px) {
