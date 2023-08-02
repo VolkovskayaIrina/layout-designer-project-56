@@ -505,14 +505,7 @@ h2 {
 }
 
 .news #page-news {
-    padding-top: 100px;
-}
-
-@media (min-width: 416px) {
-    .news #page-news {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+    padding: 100px 20px 0;
 }
 
 .news__heading {
