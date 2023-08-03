@@ -136,6 +136,10 @@ h2 {
         &__heading {
             text-align: left;
             margin-bottom: 16px;
+
+            @media (max-width: 415px) {
+                line-height: 1.55;
+            }
         }
 
         &__paragraph {

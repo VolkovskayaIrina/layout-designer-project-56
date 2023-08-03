@@ -166,6 +166,12 @@ h2 {
     margin-bottom: 16px;
 }
 
+@media (max-width: 415px) {
+    .header--artist .header-description__heading {
+        line-height: 1.55;
+    }
+}
+
 .header--artist .header-description__paragraph {
     margin: 0;
 }
@@ -667,6 +673,7 @@ h2 {
 }
 
 .app__heading {
+    margin-top: 0;
     margin-bottom: 48px;
 }
 
@@ -801,7 +808,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-auto-rows: 320px;
-    gap: 69px 3.4722222222vw;
+    gap: 69px 1.7361111111vw;
     list-style-type: none;
     padding: 0;
     margin: 0 auto;

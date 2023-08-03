@@ -180,6 +180,7 @@
     }
 
     &__heading {
+        margin-top: 0;
         margin-bottom: 48px;
     }
 
@@ -292,7 +293,7 @@
         display: grid;
         grid-template-columns: repeat(4, 250px);
         grid-auto-rows: 320px;
-        gap: 69px variables.pixelsToVW(50px);
+        gap: 69px variables.pixelsToVW(25px);
         list-style-type: none;
         padding: 0;
         margin: 0 auto;
