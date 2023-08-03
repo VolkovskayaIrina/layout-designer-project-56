@@ -3,8 +3,11 @@
 
 .pricing {
     @include variables.limitMaximumWidth;
-    padding-top: 100px;
-    
+
+    #page-pricing {
+        padding-top: 100px;
+    }
+
     &__heading {
         margin-bottom: variables.pixelsToVW(48px);
     }
@@ -16,6 +19,10 @@
         row-gap: variables.pixelsToVW(50px);
         justify-content: space-between;
         list-style-type: none;
+
+        @media (max-width: 415px) {
+            gap: 50px;
+        }
 
         &-item {
             width: 370px;
@@ -40,6 +47,10 @@
                 margin-bottom: 200px;
                 font-weight: 400;
                 text-align: center;
+
+                @media (max-width: 415px) {
+                    font-size: 16px;
+                }
             }
             
             &__price {
@@ -157,7 +168,11 @@
 
 .app {
     @include variables.limitMaximumWidth;
-    padding: 100px 0;
+    padding-bottom: 100px;
+
+    #page-app {
+        padding-top: 100px;
+    }
 
     &__heading {
         margin-bottom: 48px;
@@ -194,11 +209,15 @@
 
 .popular-track {
     @include variables.limitMaximumWidth;
-    padding-top: 100px;
 
+    #page-popular-track {
+        padding-top: 100px;
+    }
+  
     &__heading {
         text-align: left;
         margin: 0 auto 48px auto;
+        color: #fff;
     }
 
     &-list {
@@ -233,6 +252,7 @@
                 margin: 0;
                 text-transform: uppercase;
                 align-self: flex-end;
+                color: #fff;
             }
 
             &__time {
@@ -249,7 +269,10 @@
 
 .discography {
     @include variables.limitMaximumWidth;
-    padding-top: 100px;
+
+    #page-discography {
+        padding-top: 100px;
+    }
 
     &__heading {
         text-align: left;
@@ -267,10 +290,11 @@
 
 
         @media (max-width: 415px) {
-            grid-template-columns: repeat(2, 137px);
+            grid-template-columns: 137px 138px;
             grid-template-rows: 206px;
             grid-auto-rows: 233px;
             column-gap: 50px;
+            row-gap: 25px;
          }
         
         &-item {
@@ -294,8 +318,11 @@
 
 .similar {
     @include variables.limitMaximumWidth;
-    padding-top: 100px;
     padding-bottom: 100px;
+
+    #page-similar {
+        padding-top: 100px;
+    }
 
     &__heading {
         text-align: left;
@@ -317,14 +344,13 @@
             column-gap: 50px;
          }
 
-
         &-item {
             &__image {
                 width: 100%;
             }
 
             &__heading {
-               margin: 0;
+               margin: 18px 0 0;
                font-size: 18px;
                line-height: 27px;
                text-align: center;
@@ -334,8 +360,8 @@
                 font-size: variables.$textSize1;
                 text-align: center;
                 margin-top: 0;
+                color: variables.$gray;
             }
-
         }
     }
 }
