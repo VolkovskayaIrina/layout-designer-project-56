@@ -6,9 +6,12 @@
 
     #page-pricing {
         padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &__heading {
+        margin-top: 0;
         margin-bottom: variables.pixelsToVW(48px);
     }
 
@@ -172,6 +175,8 @@
 
     #page-app {
         padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &__heading {
@@ -212,6 +217,8 @@
 
     #page-popular-track {
         padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
   
     &__heading {
@@ -272,6 +279,8 @@
 
     #page-discography {
         padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &__heading {
@@ -322,6 +331,8 @@
 
     #page-similar {
         padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     &__heading {

@@ -201,6 +201,7 @@ h2 {
     position: relative;
     display: block;
     font-size: 11px;
+    font-weight: 700;
     margin-right: 90px;
     text-transform: uppercase;
     color: #fff;
@@ -231,6 +232,7 @@ h2 {
     text-decoration: none;
     color: #cacaca;
     font-size: 11px;
+    font-weight: 700;
     margin-right: 24px;
 }
 
@@ -456,9 +458,12 @@ h2 {
 
 .pricing #page-pricing {
     padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .pricing__heading {
+    margin-top: 0;
     margin-bottom: 3.3333333333vw;
 }
 
@@ -657,6 +662,8 @@ h2 {
 
 .app #page-app {
     padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .app__heading {
@@ -709,6 +716,8 @@ h2 {
 
 .popular-track #page-popular-track {
     padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .popular-track__heading {
@@ -779,6 +788,8 @@ h2 {
 
 .discography #page-discography {
     padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .discography__heading {
@@ -839,6 +850,8 @@ h2 {
 
 .similar #page-similar {
     padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .similar__heading {
