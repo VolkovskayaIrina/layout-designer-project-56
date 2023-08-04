@@ -294,12 +294,23 @@ h2 {
     margin: 0;
 }
 
+@media (max-width: 415px) {
+    .header-description__heading {
+        line-height: 1.4995;
+        transform: scaleY(1.08);
+        letter-spacing: -0.2px;
+    }
+}
+
 .header-description__subheading {
     margin: 0 0 31px 0;
 }
 
 @media (max-width: 415px) {
     .header-description__subheading {
+        line-height: 1.4995;
+        transform: scaleY(1.08);
+        letter-spacing: -0.2px;
         margin-bottom: 16px;
     }
 }
@@ -311,6 +322,9 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__paragraph {
+        line-height: 1.4995;
+        transform: scaleY(1.08);
+        letter-spacing: -0.2px;
         margin-bottom: 17px;
     }
 }

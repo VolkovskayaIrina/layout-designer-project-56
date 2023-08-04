@@ -41,3 +41,9 @@ $textSmall: 12.8px;
         }
     }
 }
+
+@mixin stretchFont {
+    line-height: 1.4995;
+    transform: scaleY(1.08);
+    letter-spacing: -0.2px;
+}

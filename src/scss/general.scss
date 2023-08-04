@@ -252,12 +252,17 @@ h2 {
 
         &__heading {
             margin: 0;
+
+            @media (max-width: 415px) {
+                @include variables.stretchFont;
+            }
         }
 
         &__subheading {
             margin: 0 0 31px 0;
 
             @media (max-width: 415px) {
+                @include variables.stretchFont;
                 margin-bottom: 16px;
             }
         }
@@ -267,6 +272,7 @@ h2 {
             margin: 0 0 17px 0;
 
             @media (max-width: 415px) {
+                @include variables.stretchFont;
                 margin-bottom: 17px;
             }
         }
