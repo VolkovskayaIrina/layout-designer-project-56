@@ -43,7 +43,7 @@ $textSmall: 12.8px;
 }
 
 @mixin stretchFont {
-    line-height: 1.4995;
-    transform: scaleY(1.08);
-    letter-spacing: -0.2px;
+    transform: scale(0.95495, 1.08);
+    font-variant-ligatures: common-ligatures;
+    letter-spacing: -0.3px;
 }
