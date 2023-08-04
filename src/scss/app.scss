@@ -13,6 +13,10 @@
     &__heading {
         margin-top: 0;
         margin-bottom: variables.pixelsToVW(48px);
+
+        @media (max-width: 415px) {
+            margin-bottom: 50px;
+        }
     }
 
      &-list {
@@ -261,6 +265,10 @@
                 text-transform: uppercase;
                 align-self: flex-end;
                 color: #fff;
+
+                @media (max-width: 415px) {
+                    font-size: variables.$textSmall;
+                }
             }
 
             &__time {
@@ -293,11 +301,10 @@
         display: grid;
         grid-template-columns: repeat(4, 250px);
         grid-auto-rows: 320px;
-        gap: 69px variables.pixelsToVW(25px);
+        gap: 25px variables.pixelsToVW(50px);
         list-style-type: none;
         padding: 0;
         margin: 0 auto;
-
 
         @media (max-width: 415px) {
             grid-template-columns: 137px 138px;
@@ -364,8 +371,8 @@
             &__heading {
                margin: 18px 0 0;
                font-size: 18px;
-               line-height: 27px;
                text-align: center;
+               color: #fff;
             }
 
             &__paragraph {

@@ -198,6 +198,7 @@ h2 {
 
 @media (max-width: 415px) {
     .header-navigation {
+        width: calc(100% - 40px);
         align-items: flex-start;
         flex-direction: column;
     }
@@ -471,6 +472,12 @@ h2 {
 .pricing__heading {
     margin-top: 0;
     margin-bottom: 3.3333333333vw;
+}
+
+@media (max-width: 415px) {
+    .pricing__heading {
+        margin-bottom: 50px;
+    }
 }
 
 .pricing-list {
@@ -772,6 +779,12 @@ h2 {
     color: #fff;
 }
 
+@media (max-width: 415px) {
+    .popular-track-list-item__heading {
+        font-size: 12.8px;
+    }
+}
+
 .popular-track-list-item__time {
     grid-row: span 2;
     align-self: center;
@@ -808,7 +821,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-auto-rows: 320px;
-    gap: 69px 1.7361111111vw;
+    gap: 25px 3.4722222222vw;
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
@@ -891,8 +904,8 @@ h2 {
 .similar-list-item__heading {
     margin: 18px 0 0;
     font-size: 18px;
-    line-height: 27px;
     text-align: center;
+    color: #fff;
 }
 
 .similar-list-item__paragraph {
