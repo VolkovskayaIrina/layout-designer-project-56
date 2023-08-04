@@ -43,7 +43,9 @@ $textSmall: 12.8px;
 }
 
 @mixin stretchFont {
-    transform: scale(0.95495, 1.08);
+    transform: scale(0.91495, 1.08);
     font-variant-ligatures: common-ligatures;
     letter-spacing: -0.3px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

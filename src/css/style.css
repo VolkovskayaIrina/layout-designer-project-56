@@ -296,8 +296,10 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__heading {
-        transform: scale(0.95495, 1.08);
+        transform: scale(0.91495, 1.08);
         font-variant-ligatures: common-ligatures;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         letter-spacing: -0.3px;
     }
 }
@@ -308,8 +310,10 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__subheading {
-        transform: scale(0.95495, 1.08);
+        transform: scale(0.91495, 1.08);
         font-variant-ligatures: common-ligatures;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         letter-spacing: -0.3px;
         margin-bottom: 16px;
     }
