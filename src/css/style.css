@@ -296,7 +296,7 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__heading {
-        transform: scale(0.91495, 1.08);
+        transform: scale(0.93495, 1.08);
         font-variant-ligatures: common-ligatures;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -310,7 +310,7 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__subheading {
-        transform: scale(0.91495, 1.08);
+        transform: scale(0.93495, 1.08);
         font-variant-ligatures: common-ligatures;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
