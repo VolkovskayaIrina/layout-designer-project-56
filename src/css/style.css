@@ -296,11 +296,12 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__heading {
+        line-height: 40.5px;
         transform: scale(0.93495, 1.08);
         font-variant-ligatures: common-ligatures;
+        letter-spacing: -0.3px;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        letter-spacing: -0.3px;
     }
 }
 
@@ -310,11 +311,12 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__subheading {
+        line-height: 34px;
         transform: scale(0.93495, 1.08);
         font-variant-ligatures: common-ligatures;
+        letter-spacing: -0.3px;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        letter-spacing: -0.3px;
         margin-bottom: 16px;
     }
 }
@@ -326,9 +328,12 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__paragraph {
-        transform: scale(0.95495, 1.08);
+        line-height: 25px;
+        transform: scale(0.93495, 1.08);
         font-variant-ligatures: common-ligatures;
         letter-spacing: -0.3px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         margin-bottom: 17px;
     }
 }

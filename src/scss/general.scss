@@ -254,7 +254,7 @@ h2 {
             margin: 0;
 
             @media (max-width: 415px) {
-                @include variables.stretchFont;
+                @include variables.stretchFont(20.25px);
             }
         }
 
@@ -262,7 +262,7 @@ h2 {
             margin: 0 0 31px 0;
 
             @media (max-width: 415px) {
-                @include variables.stretchFont;
+                @include variables.stretchFont(17px);
                 margin-bottom: 16px;
             }
         }
@@ -272,7 +272,7 @@ h2 {
             margin: 0 0 17px 0;
 
             @media (max-width: 415px) {
-                @include variables.stretchFont;
+                @include variables.stretchFont(12.5px);
                 margin-bottom: 17px;
             }
         }
