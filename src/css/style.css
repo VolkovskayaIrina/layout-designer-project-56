@@ -390,7 +390,7 @@ h2 {
 .footer-map {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 60px;
 }
 
 @media (max-width: 415px) {
