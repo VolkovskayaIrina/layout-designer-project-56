@@ -16,7 +16,7 @@
         color: #fff;
 
         @media (max-width: 415px) {
-            margin-bottom: 50px;
+            margin-bottom: 49px;
         }
     }
 
@@ -41,9 +41,10 @@
             &--free {
                 @include variables.backgroundImage($url: '../images/subscribe_1.png');
             }
+
             &--standard {
                 @include variables.backgroundImage($url: '../images/subscribe_2.png');
-             }
+            }
 
             &--premium {
                 @include variables.backgroundImage($url: '../images/subscribe_3.png');
@@ -371,6 +372,10 @@
          }
 
         &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             &__image {
                 width: 100%;
             }

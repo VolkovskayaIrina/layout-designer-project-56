@@ -477,7 +477,7 @@ h2 {
 
 @media (max-width: 415px) {
     .pricing__heading {
-        margin-bottom: 50px;
+        margin-bottom: 49px;
     }
 }
 
@@ -902,6 +902,12 @@ h2 {
         grid-auto-rows: 230px;
         column-gap: 50px;
     }
+}
+
+.similar-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .similar-list-item__image {
