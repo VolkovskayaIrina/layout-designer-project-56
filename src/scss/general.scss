@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto-Bold.ttf") format("true type");
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2");
     font-weight: 700;
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto-Medium.ttf") format("true type");
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
     font-weight: 500;
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto-Regular.ttf") format("true type");
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2");
     font-weight: 400;
 }
 
@@ -252,17 +252,12 @@ h2 {
 
         &__heading {
             margin: 0;
-
-            @media (max-width: 415px) {
-                @include variables.stretchFont(20.25px);
-            }
         }
 
         &__subheading {
             margin: 0 0 31px 0;
 
             @media (max-width: 415px) {
-                @include variables.stretchFont(17px);
                 margin-bottom: 16px;
             }
         }
@@ -272,7 +267,6 @@ h2 {
             margin: 0 0 17px 0;
 
             @media (max-width: 415px) {
-                @include variables.stretchFont(12.5px);
                 margin-bottom: 17px;
             }
         }

@@ -1,18 +1,18 @@
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto-Bold.ttf") format("true type");
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2");
     font-weight: 700;
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto-Medium.ttf") format("true type");
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
     font-weight: 500;
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto-Regular.ttf") format("true type");
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2");
     font-weight: 400;
 }
 
@@ -294,29 +294,12 @@ h2 {
     margin: 0;
 }
 
-@media (max-width: 415px) {
-    .header-description__heading {
-        line-height: 40.5px;
-        transform: scale(0.93495, 1.08);
-        font-variant-ligatures: common-ligatures;
-        letter-spacing: -0.3px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-}
-
 .header-description__subheading {
     margin: 0 0 31px 0;
 }
 
 @media (max-width: 415px) {
     .header-description__subheading {
-        line-height: 34px;
-        transform: scale(0.93495, 1.08);
-        font-variant-ligatures: common-ligatures;
-        letter-spacing: -0.3px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
         margin-bottom: 16px;
     }
 }
@@ -328,12 +311,6 @@ h2 {
 
 @media (max-width: 415px) {
     .header-description__paragraph {
-        line-height: 25px;
-        transform: scale(0.93495, 1.08);
-        font-variant-ligatures: common-ligatures;
-        letter-spacing: -0.3px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
         margin-bottom: 17px;
     }
 }
