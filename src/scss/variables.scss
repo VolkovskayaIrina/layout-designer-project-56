@@ -41,12 +41,3 @@ $textSmall: 12.8px;
         }
     }
 }
-
-@mixin stretchFont($lineHeight) {
-    line-height: $lineHeight * 2;
-    transform: scale(0.93495, 1.08);
-    font-variant-ligatures: common-ligatures;
-    letter-spacing: -0.3px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}

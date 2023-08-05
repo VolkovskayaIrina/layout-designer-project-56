@@ -166,24 +166,24 @@ h2 {
     margin-bottom: 16px;
 }
 
-@media (max-width: 415px) {
-    .header--artist .header-description__heading {
-        line-height: 1.55;
-    }
-}
-
 .header--artist .header-description__paragraph {
     margin: 0;
 }
 
 .header--artist .header-form {
     margin-top: 48px;
-    gap: 1.5rem;
+    gap: 24px;
     align-items: center;
 }
 
 .header--artist .header-form>.button {
     flex-grow: 0;
+}
+
+@media (max-width: 415px) {
+    .header--artist .header-form>.button {
+        height: 62px;
+    }
 }
 
 .header-navigation {
@@ -472,6 +472,7 @@ h2 {
 .pricing__heading {
     margin-top: 0;
     margin-bottom: 3.3333333333vw;
+    color: #fff;
 }
 
 @media (max-width: 415px) {
@@ -526,6 +527,7 @@ h2 {
     margin-bottom: 200px;
     font-weight: 400;
     text-align: center;
+    color: #fff;
 }
 
 @media (max-width: 415px) {
@@ -542,6 +544,7 @@ h2 {
     gap: 16px;
     font-size: 64px;
     line-height: 1em;
+    color: #fff;
 }
 
 .pricing-list-item__price--currency {
@@ -554,12 +557,14 @@ h2 {
     text-align: center;
     margin: 64px 0;
     font-size: 12.8px;
+    color: #fff;
 }
 
 .pricing__paragraph {
     text-align: center;
     margin-top: 40px;
     font-size: 16px;
+    color: #fff;
 }
 
 .news>* {
@@ -682,6 +687,7 @@ h2 {
 .app__heading {
     margin-top: 0;
     margin-bottom: 48px;
+    color: #fff;
 }
 
 .app-columns {
@@ -877,6 +883,7 @@ h2 {
 .similar__heading {
     text-align: left;
     margin: 0 auto 48px auto;
+    color: #fff;
 }
 
 .similar-list {
@@ -911,6 +918,6 @@ h2 {
 .similar-list-item__paragraph {
     font-size: 16px;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
     color: #e0e0e0;
 }

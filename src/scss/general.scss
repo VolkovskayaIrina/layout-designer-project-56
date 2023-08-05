@@ -136,10 +136,6 @@ h2 {
         &__heading {
             text-align: left;
             margin-bottom: 16px;
-
-            @media (max-width: 415px) {
-                line-height: 1.55;
-            }
         }
 
         &__paragraph {
@@ -149,11 +145,15 @@ h2 {
 
     &--artist &-form {
         margin-top: 48px;
-        gap: 1.5rem;
+        gap: 24px;
         align-items: center;
 
         & > .button {
             flex-grow: 0;
+
+            @media (max-width: 415px) {
+                height: 62px;
+            }
         }
     }
 
