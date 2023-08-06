@@ -119,14 +119,14 @@
         display: flex;
         gap: 50px;
 
-        @media (max-width: 415px) {
+        @media (max-width: 1050px) {
             flex-direction: column;
         }
 
         &:nth-child(odd) {
             flex-direction: row-reverse;
 
-            @media (max-width: 415px) {
+            @media (max-width: 1050px) {
                 flex-direction: column;
             }
         }
@@ -218,12 +218,12 @@
         &__image {
             align-self: flex-start;
 
-            @media (max-width: 415px) {
+            @media (max-width: 700px) {
                 align-self: center;
             }
         }
 
-        @media (max-width: 415px) {
+        @media (max-width: 700px) {
             flex-direction: column-reverse;
             gap: 0;
         }
@@ -319,13 +319,21 @@
         padding: 0;
         margin: 0 auto;
 
-        @media (max-width: 415px) {
+        @media (max-width: 1250px) {
+            grid-template-columns: repeat(3, 250px);
+        }
+
+        @media (max-width: 950px) {
+            grid-template-columns: repeat(2, 250px);
+        }
+
+        @media (max-width: 600px) {
             grid-template-columns: 137px 138px;
             grid-template-rows: 206px;
             grid-auto-rows: 233px;
             column-gap: 50px;
             row-gap: 25px;
-         }
+        }
         
         &-item {
             &__image {
@@ -371,7 +379,16 @@
         padding: 0;
         margin: 0 auto;
 
-        @media (max-width: 415px) {
+        
+        @media (max-width: 1250px) {
+            grid-template-columns: repeat(3, 250px);
+        }
+
+        @media (max-width: 950px) {
+            grid-template-columns: repeat(2, 250px);
+        }
+
+        @media (max-width: 600px) {
             grid-template-columns: repeat(2, 137px);
             grid-auto-rows: 230px;
             column-gap: 50px;

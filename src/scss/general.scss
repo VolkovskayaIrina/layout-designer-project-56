@@ -168,10 +168,11 @@ h2 {
         left: 50%;
         width: variables.pixelsToVW(1200px);
 
-        @media (max-width: 415px) {
+        @media (max-width: 730px) {
             width: calc(100% - 40px);
             align-items: flex-start;
             flex-direction: column;
+            flex-wrap: wrap;
         }
 
         &__logo {
@@ -183,7 +184,7 @@ h2 {
             text-transform: uppercase;
             color: #fff;
 
-            @media (max-width: 415px) {
+            @media (max-width: 730px) {
                 margin-left: 40px;
                 margin-bottom: 17px;
             }
@@ -215,7 +216,7 @@ h2 {
             &:last-of-type {
                 margin-right: auto;
 
-                @media (max-width: 415px) {
+                @media (max-width: 730px) {
                     margin-bottom: 18px;
                 }
             }
@@ -233,7 +234,7 @@ h2 {
             height: 25px;
             padding: 5px 10px;
 
-            @media (max-width: 415px) {
+            @media (max-width: 730px) {
                 width: 100%;
             }
 
@@ -286,7 +287,7 @@ h2 {
         margin: 0;
         padding: 0;
 
-        @media (max-width: 415px) {
+        @media (max-width: 650px) {
             & > * {
                 flex-grow: 1;
             }
@@ -302,7 +303,8 @@ h2 {
             border-radius: 3px;
             background-color: transparent;
 
-            @media (max-width: 415px) {
+            @media (max-width: 650px) {
+                min-width: 100%;
                 margin-bottom: 24px;
             }
 
@@ -316,7 +318,7 @@ h2 {
         .button {
             flex-grow: 1;
 
-            @media (max-width: 415px) {
+            @media (max-width: 650px) {
                 height: 57px;
             }
         }
@@ -334,7 +336,7 @@ h2 {
         justify-content: space-between;
         margin-bottom: 72px;
 
-        @media (max-width: 415px) {
+        @media (max-width: 650px) {
             flex-direction: column;
             gap: 32px;
             margin-bottom: 60px;
@@ -379,7 +381,7 @@ h2 {
         gap: 16px;
         margin-top: 40px;
 
-        @media (max-width: 415px) {
+        @media (max-width: 650px) {
             flex-direction: column;
         }
 
